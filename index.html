@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeForge</title>
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+  <!-- MENU -->
+  <nav class="fixed top-0 left-0 w-full bg-gray-800 shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
+      <div class="flex items-center space-x-2">
+        <img src="logo-casa.png" alt="Logo" class="w-10 h-10 drop-shadow-[0_0_15px_rgba(0,255,255,0.7)]">
+        <span class="font-bold text-xl text-blue-400 drop-shadow-[0_0_10px_rgba(0,255,255,0.7)]">CodeForge</span>
+      </div>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#hero" class="hover:text-cyan-400 transition-colors drop-shadow-[0_0_8px_rgba(0,255,255,0.6)]">Home</a></li>
+        <li><a href="#servicos" class="hover:text-cyan-400 transition-colors drop-shadow-[0_0_8px_rgba(0,255,255,0.6)]">Serviços</a></li>
+        <li><a href="#sobre" class="hover:text-cyan-400 transition-colors drop-shadow-[0_0_8px_rgba(0,255,255,0.6)]">Sobre</a></li>
+        <li><a href="#contato" class="hover:text-cyan-400 transition-colors drop-shadow-[0_0_8px_rgba(0,255,255,0.6)]">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-800 via-purple-700 to-pink-600 text-white">
+    <div class="text-center space-y-4">
+      <h1 class="text-5xl font-bold drop-shadow-[0_0_15px_rgba(0,255,255,0.7)]">Construa o futuro do seu código</h1>
+      <p class="text-xl drop-shadow-[0_0_10px_rgba(0,255,255,0.6)]">Soluções completas de desenvolvimento fullstack</p>
+      <a href="#contato" class="inline-block mt-4 px-6 py-3 bg-cyan-500 text-gray-900 font-semibold rounded-lg shadow-lg hover:shadow-[0_0_20px_rgba(0,255,255,0.8)] transition">Entre em contato</a>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="py-20 bg-gray-900">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-12 drop-shadow-[0_0_15px_rgba(0,255,255,0.7)]">Nossos Serviços</h2>
+      <div class="grid md:grid-cols-3 gap-12">
+        <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-[0_0_25px_rgba(0,255,255,0.7)] transition">
+          <i class="ph ph-code-bold text-4xl text-cyan-400 mb-4 drop-shadow-[0_0_15px_rgba(0,255,255,0.7)]"></i>
+          <h3 class="text-xl font-semibold mb-2 drop-shadow-[0_0_10px_rgba(0,255,255,0.6)]">Desenvolvimento Web</h3>
+          <p>Criamos sites e aplicações modernas com foco em performance e UX.</p>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-[0_0_25px_rgba(255,0,255,0.7)] transition">
+          <i class="ph ph-hammer-bold text-4xl text-purple-400 mb-4 drop-shadow-[0_0_15px_rgba(255,0,255,0.7)]"></i>
+          <h3 class="text-xl font-semibold mb-2 drop-shadow-[0_0_10px_rgba(255,0,255,0.6)]">Consultoria Técnica</h3>
+          <p>Orientação profissional para otimizar processos e tecnologia da sua empresa.</p>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-[0_0_25px_rgba(0,255,0,0.7)] transition">
+          <i class="ph ph-server-bold text-4xl text-green-400 mb-4 drop-shadow-[0_0_15px_rgba(0,255,0,0.7)]"></i>
+          <h3 class="text-xl font-semibold mb-2 drop-shadow-[0_0_10px_rgba(0,255,0,0.6)]">Infraestrutura & Cloud</h3>
+          <p>Implantamos e gerenciamos servidores, cloud e banco de dados de forma segura.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="py-20 bg-gradient-to-r from-purple-700 via-pink-600 to-orange-500 text-white">
+    <div class="max-w-5xl mx-auto text-center space-y-6">
+      <h2 class="text-3xl font-bold drop-shadow-[0_0_15px_rgba(255,255,0,0.8)]">Sobre a CodeForge</h2>
+      <p class="text-lg drop-shadow-[0_0_10px_rgba(255,255,0,0.6)]">
+        Somos uma equipe apaixonada por tecnologia, desenvolvendo soluções criativas e eficientes para empresas de todos os tamanhos. Transformamos ideias em sistemas que realmente funcionam.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="py-20 bg-gray-900">
+    <div class="max-w-4xl mx-auto text-center space-y-6">
+      <h2 class="text-3xl font-bold drop-shadow-[0_0_15px_rgba(0,255,255,0.7)]">Fale Conosco</h2>
+      <form class="grid gap-6">
+        <input type="text" placeholder="Nome" class="p-4 rounded-lg shadow-inner border border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+        <input type="email" placeholder="Email" class="p-4 rounded-lg shadow-inner border border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+        <textarea placeholder="Mensagem" class="p-4 rounded-lg shadow-inner border border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-400"></textarea>
+        <button type="submit" class="px-6 py-3 bg-cyan-500 text-gray-900 font-semibold rounded-lg shadow-lg hover:shadow-[0_0_25px_rgba(0,255,255,0.8)] transition">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="py-6 bg-gray-800 text-center text-gray-400 drop-shadow-[0_0_8px_rgba(0,255,255,0.5)]">
+    © 2025 CodeForge. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
